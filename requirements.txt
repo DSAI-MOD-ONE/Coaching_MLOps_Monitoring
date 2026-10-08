@@ -1,0 +1,12 @@
+# Notebooks 01-03
+pandas>=2.0
+numpy>=1.24
+scipy>=1.10
+scikit-learn>=1.2
+matplotlib>=3.7
+joblib>=1.2
+requests>=2.28
+
+# Notebook 04 (optional stretch) — install only if you will do it
+# mlflow>=3.0
+# evidently>=0.7
