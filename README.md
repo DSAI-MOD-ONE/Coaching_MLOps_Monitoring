@@ -39,7 +39,7 @@ Open the notebooks **from the `notebooks` folder** and run them in order (01 →
 | Data drift | The inputs look different from training | Flats sold today have shorter remaining leases |
 | PSI | One number: how much did this column move? (< 0.1 stable, > 0.25 big) | Lease PSI 0.17 → 0.60; floor area ~0.03 |
 | New categories | Values the model never saw — they fail **silently** | `3Gen` flats (first resale June 2022); a future Tengah / Prime estate |
-| Concept drift | Same inputs, different answer | Same 4-room Tampines flat: +38% since 2021 |
+| Concept drift | Same inputs, different answer.change in target | Same 4-room Tampines flat: +38% since 2021 |
 | Bias | Is the model always too high or too low? | −S$194k per flat by 2025 |
 | Sign check | 10+ of the last 12 months wrong in the same direction = alarm | v1 hits the alarm in Aug 2022 |
 | Time-based validation | Test on the newest months, not a random split | Random split promised 7%; reality was 12.5% |
