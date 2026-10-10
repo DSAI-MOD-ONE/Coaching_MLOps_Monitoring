@@ -51,6 +51,7 @@ Open the notebooks **from the `notebooks` folder** and run them in order (01 →
 
 Monitor PSI, model performance matrix such as MAE etc.
 Tree-based model can never predict higher than what the model has seen. 
+Concept drift is more important, it might be a strong indicator that model need to relook
 
 ## Bring to the share-out
 1. One drift or performance finding on **your group's** model.
