@@ -1,3 +1,5 @@
+
+
 # Coaching Session — MLOps Monitoring for Production Models
 
 **Module 3 · Machine Learning & GenAI · 3 hours (1 h concepts + 1 h 40 min hands-on + 20 min share)**
@@ -36,16 +38,18 @@ Open the notebooks **from the `notebooks` folder** and run them in order (01 →
 ## Key ideas, in one line each
 | Idea | Plain English | HDB example |
 |---|---|---|
-| Data drift | The inputs look different from training | Flats sold today have shorter remaining leases |
+| Data drift | The inputs look different from training. looking at the x value | Flats sold today have shorter remaining leases |
 | PSI | One number: how much did this column move? (< 0.1 stable, > 0.25 big) | Lease PSI 0.17 → 0.60; floor area ~0.03 |
 | New categories | Values the model never saw — they fail **silently** this is a type of data drift | `3Gen` flats (first resale June 2022); a future Tengah / Prime estate |
-| Concept drift | Same inputs, different answer.change in target | Same 4-room Tampines flat: +38% since 2021 |
+| Concept drift | Same inputs, different answer.change in target. looking at the y value | Same 4-room Tampines flat: +38% since 2021 |
 | Bias | Is the model always too high or too low? | −S$194k per flat by 2025 |
 | Sign check | 10+ of the last 12 months wrong in the same direction = alarm | v1 hits the alarm in Aug 2022 |
 | Time-based validation | Test on the newest months, not a random split | Random split promised 7%; reality was 12.5% |
 | Sliding window | Retrain on recent data only | 7% error vs 23% for never retraining |
 | Champion / challenger | A new model goes live only if it wins on recent unseen data | Gate: better overall, no flat type worse |
 | Rollback | Keep every version + a "live" pointer | Bad v3 → `set_champion("v2")` |
+
+Monitor PSI, model performance matrix such as MAE etc
 
 ## Bring to the share-out
 1. One drift or performance finding on **your group's** model.
