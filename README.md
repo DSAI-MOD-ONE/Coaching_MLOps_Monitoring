@@ -49,7 +49,8 @@ Open the notebooks **from the `notebooks` folder** and run them in order (01 →
 | Champion / challenger | A new model goes live only if it wins on recent unseen data | Gate: better overall, no flat type worse |
 | Rollback | Keep every version + a "live" pointer | Bad v3 → `set_champion("v2")` |
 
-Monitor PSI, model performance matrix such as MAE etc
+Monitor PSI, model performance matrix such as MAE etc.
+Tree-based model can never predict higher than what the model has seen. 
 
 ## Bring to the share-out
 1. One drift or performance finding on **your group's** model.
